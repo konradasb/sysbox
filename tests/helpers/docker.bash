@@ -63,5 +63,5 @@ function docker_cont_pid() {
 }
 
 function docker_userns_remap() {
-  __docker info -f '{{json .SecurityOptions}}' | grep -q "name=userns";
+  __docker info -f '{{json .SecurityOptions}}' | grep -q "name=userns"
 }
